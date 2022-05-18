@@ -40,7 +40,3 @@ To run the tests for this application, enter the following command from the root
   npm run test
   ```
 
-## License
-
-This project is licensed under the MIT license.
-
