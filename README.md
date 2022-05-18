@@ -31,7 +31,8 @@ Once the application runs, it will ask for the team's information. After inputti
 
 
 ## Demo
-![demo](./assets/generator-demo.gif)
+
+https://user-images.githubusercontent.com/89723289/168985615-594d704d-8cf3-4a57-90d9-5593c3d5f625.mp4
 
 ## Tests
 
