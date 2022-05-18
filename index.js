@@ -33,9 +33,7 @@ const addManager = () => {
     .then (managerInput => {
         const { name, id, email, officeNumber } = managerInput;
         const manager = new Manager (name, id, email, officeNumber);
-
         teamArray.push(manager);
-        console.log(manager)
     })
 }
 
@@ -90,7 +88,6 @@ const addEmployee = () => {
         } else if (role === 'Intern') {
             employee = new Intern (name, id, email, school);
         }
-        console.log(employee);
         teamArray.push(employee);
 
         if (confirmAddEmployee) {
