@@ -1,4 +1,4 @@
-# Team Profile Generator!
+# Team Profile Generator
 
 ## Description
 The Team Profile Generator is a Node.js command-line application which takes in information about employees on a team using Inquirer. Using that information, the application develops a HTML webpage which displays all of the user input data. 
