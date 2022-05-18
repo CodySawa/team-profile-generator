@@ -49,7 +49,7 @@ const generateManagerCard = function (manager) {
         <div class="card">
             <div class="bg-primary card-header text-light">
                 <h2>${manager.name}</h2>
-                <h3><i class="fa-solid fa-user-tie"></i>Manager</h3>
+                <h3><i class="fa-solid fa-user-tie mr-2"></i>Manager</h3>
             </div>
             <div class="p-4 bg-light">
                 <ul class="list-group list-group-flush card my-4">
@@ -69,7 +69,7 @@ const generateEngineerCard = function (engineer) {
         <div class="card">
             <div class="bg-primary card-header text-light">
                 <h2>${engineer.name}</h2>
-                <h3><i class="fa-solid fa-user-gear"></i>Engineer</h3>
+                <h3><i class="fa-solid fa-user-gear mr-2"></i>Engineer</h3>
             </div>
             <div class="p-4 bg-light">
                 <ul class="list-group list-group-flush card my-4">
