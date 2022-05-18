@@ -1,7 +1,5 @@
 # Team Profile Generator!
 
-[GitHub license](https://img.shields.io/badge/license-MIT-ff69b4.svg) <br />
-
 ## Description
 The Team Profile Generator is a Node.js command-line application which takes in information about employees on a team using Inquirer. Using that information, the application develops a HTML webpage which displays all of the user input data. 
 
