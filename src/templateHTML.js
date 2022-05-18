@@ -75,7 +75,7 @@ const generateEngineerCard = function (engineer) {
                 <ul class="list-group list-group-flush card my-4">
                     <li class="list-group-item">ID: ${engineer.id}</li>
                     <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
-                    <li class="list-group-item">GitHub: ${engineer.github}</li>
+                    <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.github}">${engineer.github}</a></li>
                 </ul>
             </div>
         </div>
@@ -102,3 +102,29 @@ const generateInternCard = function (intern) {
     </div>
     `;
 }
+
+generatePage = (data) => {
+    cardArray = [];
+
+    for(let i = 0; i < data.length; i++) {
+        const employee = data[i];
+        const role = employee.getRole();
+
+        if (role === 'Manager') {
+            const managerCard = generateManagerCard(employee);
+            cardArray.push(managerCard);
+        } else if (role === 'Engineer') {
+            const engineerCard = generateEngineerCard(employee);
+            cardArray.push(engineerCard);
+        } else {
+            const internCard = generateInternCard(employee);
+            cardArray.push(internCard);
+        }
+    }
+
+    const employeeCards = cardArray.join('');
+    const team = generateTeam(employeeCards);
+    return  team;
+}
+
+module.exports = generatePage;
